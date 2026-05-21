@@ -46,7 +46,11 @@ export default async function RootLayout({
 }) {
   const locale = await getLocale();
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  const adsId = "AW-1020502103";
+
+  // Define both IDs clearly
+  const existingAdsId = "AW-1020502103"; 
+  const newAdsId = "AW-18174541759";
+  
   return (
     <html lang={locale} suppressHydrationWarning className={caladea.variable}>
       <body>
@@ -59,10 +63,11 @@ export default async function RootLayout({
             />
             <Script id="ga-init" strategy="afterInteractive">
               {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${gaId}');
-gtag('config', '${adsId}');`}
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+                gtag('config', 'AW-1020502103');
+                gtag('config', 'AW-18174541759');`}
             </Script>
           </>
         )}
