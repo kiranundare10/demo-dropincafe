@@ -75,45 +75,115 @@ export default function Footer() {
         <div className="h-1 w-full bg-linear-to-r from-amber-600 to-rose-500" />
         <div className="mx-auto max-w-6xl px-4 py-10">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-5">
-              <div className="flex items-center gap-3">
-                <img
-                  src="/Logo/Logo0.png"
-                  alt="Drop In Cafe"
-                  className="h-12 w-12 rounded-full border border-amber-200 object-cover object-[50%_30%] shadow-sm"
-                />
-                <div>
-                  <p className="text-base font-semibold text-slate-950">
-                    {t("brandName")}
+            
+            {/* COLUMN 1: Contact Details */}
+            <div className="space-y-8">
+              
+              {/* === BRANCH 1 === */}
+              <div className="space-y-5">
+                <div className="flex items-center gap-3">
+                  <img
+                    src="/Logo/Logo0.png"
+                    alt="Drop In Cafe"
+                    className="h-12 w-12 rounded-full border border-amber-200 object-cover object-[50%_30%] shadow-sm"
+                  />
+                  <div>
+                    <p className="text-base font-semibold text-slate-950">
+                      {t("brandName")}
+                    </p>
+                    <p className="text-sm text-slate-600">{t("brandTagline")}</p>
+                  </div>
+                </div>
+                <div className="space-y-2 text-sm text-slate-700">
+                  <p className="flex items-start gap-2">
+                    <MapPin className="mt-0.5 h-5 w-5 text-amber-500 shrink-0" />
+                    <span>{t("address")}</span>
                   </p>
-                  <p className="text-sm text-slate-600">{t("brandTagline")}</p>
+                  <p className="flex items-center gap-2">
+                    <Phone className="h-5 w-5 text-green-500 shrink-0" />
+                    <a
+                      href="tel:+84961689163"
+                      className="transition hover:text-amber-600"
+                    >
+                      096 168 91 63
+                    </a>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Mail className="h-5 w-5 text-red-600 shrink-0" />
+                    <a
+                      href="mailto:dropincafehn@gmail.com"
+                      className="transition hover:text-amber-600"
+                    >
+                      dropincafehn@gmail.com
+                    </a>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <ExternalLink className="mt-0.5 h-5 w-5 text-slate-500 shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/m1dF4toG6xPYLGdQ9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition hover:text-amber-600 break-all"
+                    >
+                      maps.app.goo.gl/m1dF4toG6xPYLGdQ9
+                    </a>
+                  </p>
                 </div>
               </div>
-              <div className="space-y-2 text-sm text-slate-700">
-                <p className="flex items-start gap-2">
-                  <MapPin className="mt-0.5 h-5 w-5 text-amber-500" />
-                  <span>{t("address")}</span>
-                </p>
+
+              {/* === BRANCH 2 === */}
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-amber-200 bg-amber-50 shadow-sm">
+                    <MapPin className="h-6 w-6 text-amber-600" />
+                  </div>
+                  <div>
+                    <p className="text-base font-semibold text-slate-950">
+                      {t("brandNameBranch2")}
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-2 text-sm text-slate-700">
+                  <p className="flex items-start gap-2">
+                    <MapPin className="mt-0.5 h-5 w-5 text-amber-500 shrink-0" />
+                    <span>{t("addressBranch2")}</span>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Phone className="h-5 w-5 text-green-500 shrink-0" />
+                    <a
+                      href="tel:+84886600482"
+                      className="transition hover:text-amber-600"
+                    >
+                      088 660 04 82
+                    </a>
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Mail className="h-5 w-5 text-red-600 shrink-0" />
+                    <a
+                      href="mailto:dropincafehn@gmail.com"
+                      className="transition hover:text-amber-600"
+                    >
+                      dropincafehn@gmail.com
+                    </a>
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <ExternalLink className="mt-0.5 h-5 w-5 text-slate-500 shrink-0" />
+                    <a
+                      href="https://maps.app.goo.gl/afDSNDaqyfTDD9R39"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition hover:text-amber-600 break-all"
+                    >
+                      https://maps.app.goo.gl/afDSNDaqyfTDD9R39
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              {/* === SHARED SOCIALS === */}
+              <div className="space-y-2 border-t border-amber-100/60 pt-4 text-sm text-slate-700">
                 <p className="flex items-center gap-2">
-                  <Phone className="h-5 w-5 text-green-500" />
-                  <a
-                    href="tel:+84961689163"
-                    className="transition hover:text-amber-600"
-                  >
-                    096 168 91 63
-                  </a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <Mail className="h-5 w-5 text-red-600" />
-                  <a
-                    href="mailto:dropincafehn@gmail.com"
-                    className="transition hover:text-amber-600"
-                  >
-                    dropincafehn@gmail.com
-                  </a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <Instagram className="h-5 w-5 text-pink-500" />
+                  <Instagram className="h-5 w-5 text-pink-500 shrink-0" />
                   <a
                     href="https://www.instagram.com/dropincafevn"
                     target="_blank"
@@ -124,7 +194,7 @@ export default function Footer() {
                   </a>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Facebook className="h-5 w-5 text-blue-500" />
+                  <Facebook className="h-5 w-5 text-blue-500 shrink-0" />
                   <a
                     href="https://www.facebook.com/dropincafevn"
                     target="_blank"
@@ -135,18 +205,7 @@ export default function Footer() {
                   </a>
                 </p>
                 <p className="flex items-center gap-2">
-                  <ExternalLink className="h-5 w-5 text-slate-500" />
-                  <a
-                    href="https://maps.app.goo.gl/m1dF4toG6xPYLGdQ9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-amber-600"
-                  >
-                    maps.app.goo.gl/m1dF4toG6xPYLGdQ9
-                  </a>
-                </p>
-                <p className="flex items-center gap-2">
-                  <ExternalLink className="h-5 w-5 text-slate-500" />
+                  <ExternalLink className="h-5 w-5 text-slate-500 shrink-0" />
                   <a
                     href="https://dropincafe.tawk.help"
                     target="_blank"
@@ -159,6 +218,7 @@ export default function Footer() {
               </div>
             </div>
 
+            {/* COLUMN 2: Status & Services */}
             <div className="space-y-4">
               <div className="flex items-center justify-between rounded-xl border border-amber-100 bg-white/80 px-4 py-3 shadow-sm">
                 <div className="flex items-center gap-3">
@@ -209,6 +269,7 @@ export default function Footer() {
               </div>
             </div>
 
+            {/* COLUMN 3: Map View */}
             <div className="rounded-xl border border-amber-100 bg-white/80 p-3 shadow-sm">
               <div className="aspect-4/3 w-full overflow-hidden rounded-lg border border-amber-100">
                 <iframe
