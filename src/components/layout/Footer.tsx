@@ -137,11 +137,20 @@ export default function Footer() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border border-amber-200 bg-amber-50 shadow-sm">
                     <MapPin className="h-6 w-6 text-amber-600" />
                   </div>
-                  <div>
-                    <p className="text-base font-semibold text-slate-950">
-                      {t("brandNameBranch2")}
-                    </p>
-                  </div>
+{/* Container to align the logo and text side-by-side */}
+<div className="flex items-center gap-3 mb-2"> 
+  
+  {/* The new logo */}
+  <img 
+    src="/Logo/LogoNewBranch2" 
+    alt="Drop In Cafe & Bistro Logo" 
+    className="w-10 h-10 rounded-full border border-gray-200 object-cover" 
+  />
+  
+  {/* The branch name */}
+  <p className="font-bold">{t('brandNameBranch2')}</p>
+  
+</div>
                 </div>
                 <div className="space-y-2 text-sm text-slate-700">
                   <p className="flex items-start gap-2">
