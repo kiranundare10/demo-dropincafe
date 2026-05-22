@@ -142,7 +142,7 @@ export default function Footer() {
   
   {/* The new logo */}
   <img 
-    src="/Logo/LogoNewBranch2" 
+    src="/Logo/LogoNewBranch2.png" 
     alt="Drop In Cafe & Bistro Logo" 
     className="w-10 h-10 rounded-full border border-gray-200 object-cover" 
   />
