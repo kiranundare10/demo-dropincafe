@@ -292,17 +292,6 @@ export default function ProductsPageClient({
       price: 60,            // Displays as đ60,000 (Change if needed)
       slug: "espresso-sunrise"
     },
-    {
-      id: "egg-coffee",
-      name: locale === "en" ? "Egg Coffee" : "Cà phê trứng",
-      description: locale === "en" 
-        ? "Traditional phin coffee topped with a rich, creamy egg foam layer." 
-        : "Cà phê phin truyền thống kết hợp với lớp kem trứng béo ngậy.",
-      image: "/Product/egg-coffee.jpg",
-      category: "coffee",
-      price: 65,
-      slug: "egg-coffee"
-    },
     // ... rest of your existing items remain below ...
     {
       id: "egg-coffee",
