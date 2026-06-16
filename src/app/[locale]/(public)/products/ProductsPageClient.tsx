@@ -44,7 +44,7 @@ const CATEGORY_LABELS: Record<ProductCategory, { vi: string; en: string }> = {
 };
 
 const CATEGORY_ORDER: ProductCategory[] = [
-  "VN coffee",
+  "coffee",
   "espresso",
   "cold brew",
   "matcha",
