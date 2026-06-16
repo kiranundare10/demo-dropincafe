@@ -282,6 +282,29 @@ export default function ProductsPageClient({
 
   const hardcodedNewProducts: ProductCardData[] = [
     {
+      id: "espresso-sunrise",
+      name: "Espresso Sunrise",
+      description: locale === "en" 
+        ? "A refreshing layer of bold espresso over sweet, chilled orange juice." 
+        : "Sự kết hợp sảng khoái giữa espresso đậm đà và nước cam tươi mát.",
+      image: "/Product/espresso-sunrise.jpg",
+      category: "espresso", // ◄ This puts it under the Espresso menu!
+      price: 60,            // Displays as đ60,000 (Change if needed)
+      slug: "espresso-sunrise"
+    },
+    {
+      id: "egg-coffee",
+      name: locale === "en" ? "Egg Coffee" : "Cà phê trứng",
+      description: locale === "en" 
+        ? "Traditional phin coffee topped with a rich, creamy egg foam layer." 
+        : "Cà phê phin truyền thống kết hợp với lớp kem trứng béo ngậy.",
+      image: "/Product/egg-coffee.jpg",
+      category: "coffee",
+      price: 65,
+      slug: "egg-coffee"
+    },
+    // ... rest of your existing items remain below ...
+    {
       id: "egg-coffee",
       name: locale === "en" ? "Egg Coffee" : "Cà phê trứng",
       description: locale === "en" 
