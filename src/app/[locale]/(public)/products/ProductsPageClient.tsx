@@ -53,7 +53,7 @@ const CATEGORY_ORDER: ProductCategory[] = [
   "other teas",
   "chocolate",
   "cake",
-  "pastry",
+  "pantry",
   "other drinks",
   "other",
 ];
