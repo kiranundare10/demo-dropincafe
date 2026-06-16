@@ -29,7 +29,7 @@ interface ProductCardData {
 }
 
 const CATEGORY_LABELS: Record<ProductCategory, { vi: string; en: string }> = {
-  VN coffee: { vi: "Cà phê", en: "VN Coffee" },
+  coffee: { vi: "Cà phê", en: "VN Coffee" },
   espresso: { vi: "Espresso", en: "Espresso" },
   "cold brew": { vi: "Cold brew", en: "Cold brew" },
   chocolate: { vi: "Chocolate", en: "Chocolate" },
