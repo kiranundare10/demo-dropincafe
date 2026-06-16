@@ -39,7 +39,7 @@ const CATEGORY_LABELS: Record<ProductCategory, { vi: string; en: string }> = {
   "other teas": { vi: "Trà khác", en: "Other teas" },
   "other drinks": { vi: "Đồ uống khác", en: "Other drinks" },
   cake: { vi: "Bánh & dessert", en: "Cake & dessert" },
-  pastry: { vi: "Pastry", en: "Pastry" },
+  pantry: { vi: "Pastry", en: "Pastry" },
   other: { vi: "Khác", en: "Other" },
 };
 
