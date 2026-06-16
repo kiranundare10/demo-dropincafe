@@ -289,7 +289,7 @@ export default function ProductsPageClient({
         : "Sự kết hợp sảng khoái giữa espresso đậm đà và nước cam tươi mát.",
       image: "/Product/espresso-sunrise.jpg",
       category: "espresso", // ◄ This puts it under the Espresso menu!
-      price: 60,            // Displays as đ60,000 (Change if needed)
+      price: 70,            // Displays as đ70,000 (Change if needed)
       slug: "espresso-sunrise"
     },
     // ... rest of your existing items remain below ...
@@ -301,7 +301,7 @@ export default function ProductsPageClient({
         : "Cà phê phin truyền thống kết hợp với lớp kem trứng béo ngậy.",
       image: "/Product/egg-coffee.jpg",
       category: "coffee",
-      price: 65,
+      price: 75,
       slug: "egg-coffee"
     },
     {
@@ -334,7 +334,7 @@ export default function ProductsPageClient({
         : "Thức uống nhiều sữa ít cà phê ngọt ngào chuẩn vị Sài Gòn.",
       image: "/Product/saigon-milk-coffee.jpg",
       category: "coffee",
-      price: 55,
+      price: 45,
       slug: "saigon-milk-coffee"
     },
     {
@@ -356,7 +356,7 @@ export default function ProductsPageClient({
         : "Cà phê phin đậm đà hòa quyện cùng sữa đặc và đá mát lạnh.",
       image: "/Product/milk-coffee.jpg",
       category: "coffee",
-      price: 50,
+      price: 45,
       slug: "milk-coffee"
     }
   ];
