@@ -309,7 +309,7 @@ export default function ProductsPageClient({
       description: locale === "en" 
         ? "Bold coffee blended with icy, refreshing coconut cream." 
         : "Cà phê đậm đà xay cùng cốt dừa đá tuyết mát lạnh.",
-      image: "/Product/ice-blend-coconut.jpg",
+      image: "/Product/ice-blend-coconut-coffee.jpg",
       category: "coffee",
       price: 65,
       slug: "ice-blend-coconut"
@@ -331,7 +331,7 @@ export default function ProductsPageClient({
       description: locale === "en" 
         ? "Strong, pure traditional drip phin coffee for true coffee lovers." 
         : "Cà phê phin đậm đà, thuần khiết mang hương vị truyền thống.",
-      image: "/Product/vietnamese-black.jpg",
+      image: "/Product/traditional-vietnamese-black-coffee.jpg",
       category: "coffee",
       price: 45,
       slug: "vietnamese-black"
