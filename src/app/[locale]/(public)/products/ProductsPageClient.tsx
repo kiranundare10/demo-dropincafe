@@ -29,7 +29,7 @@ interface ProductCardData {
 }
 
 const CATEGORY_LABELS: Record<ProductCategory, { vi: string; en: string }> = {
-  coffee: { vi: "Cà phê", en: "Coffee" },
+  VN coffee: { vi: "Cà phê", en: "VN Coffee" },
   espresso: { vi: "Espresso", en: "Espresso" },
   "cold brew": { vi: "Cold brew", en: "Cold brew" },
   chocolate: { vi: "Chocolate", en: "Chocolate" },
@@ -39,12 +39,12 @@ const CATEGORY_LABELS: Record<ProductCategory, { vi: string; en: string }> = {
   "other teas": { vi: "Trà khác", en: "Other teas" },
   "other drinks": { vi: "Đồ uống khác", en: "Other drinks" },
   cake: { vi: "Bánh & dessert", en: "Cake & dessert" },
-  pantry: { vi: "Pantry", en: "Pantry" },
+  pastry: { vi: "Pastry", en: "Pastry" },
   other: { vi: "Khác", en: "Other" },
 };
 
 const CATEGORY_ORDER: ProductCategory[] = [
-  "coffee",
+  "VN coffee",
   "espresso",
   "cold brew",
   "matcha",
@@ -53,7 +53,7 @@ const CATEGORY_ORDER: ProductCategory[] = [
   "other teas",
   "chocolate",
   "cake",
-  "pantry",
+  "pastry",
   "other drinks",
   "other",
 ];
