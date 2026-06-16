@@ -273,12 +273,83 @@ export default function ProductsPageClient({
     }
   }, [initialMappedProducts, locale]);
 
-  const products =
+  const fetchedProducts =
     mappedProducts.length > 0
       ? mappedProducts
       : initialMappedProducts.length > 0
       ? initialMappedProducts
       : cachedProducts.current[locale] || [];
+
+  const hardcodedNewProducts: ProductCardData[] = [
+    {
+      id: "egg-coffee",
+      name: locale === "en" ? "Egg Coffee" : "Cà phê trứng",
+      description: locale === "en" 
+        ? "Traditional phin coffee topped with a rich, creamy egg foam layer." 
+        : "Cà phê phin truyền thống kết hợp với lớp kem trứng béo ngậy.",
+      image: "/Product/egg-coffee.jpg",
+      category: "coffee",
+      price: 65,
+      slug: "egg-coffee"
+    },
+    {
+      id: "coconut-brulee",
+      name: locale === "en" ? "Coconut Brulee Coffee" : "Cà phê dừa nướng",
+      description: locale === "en" 
+        ? "Rich coconut milk coffee topped with a crunchy, caramelized brûlée crust." 
+        : "Cà phê sữa dừa béo ngậy kết hợp lớp đường nướng giòn rụm.",
+      image: "/Product/coconut-brulee.jpg",
+      category: "coffee",
+      price: 65,
+      slug: "coconut-brulee"
+    },
+    {
+      id: "ice-blend-coconut",
+      name: locale === "en" ? "Ice Blend Coconut Coffee" : "Cà phê cốt dừa đá xay",
+      description: locale === "en" 
+        ? "Bold coffee blended with icy, refreshing coconut cream." 
+        : "Cà phê đậm đà xay cùng cốt dừa đá tuyết mát lạnh.",
+      image: "/Product/ice-blend-coconut.jpg",
+      category: "coffee",
+      price: 65,
+      slug: "ice-blend-coconut"
+    },
+    {
+      id: "saigon-milk-coffee",
+      name: locale === "en" ? "Saigon Milk Coffee" : "Bạc xỉu Sài Gòn",
+      description: locale === "en" 
+        ? "A sweet, milk-forward coffee layered in classic Saigon style." 
+        : "Thức uống nhiều sữa ít cà phê ngọt ngào chuẩn vị Sài Gòn.",
+      image: "/Product/saigon-milk-coffee.jpg",
+      category: "coffee",
+      price: 55,
+      slug: "saigon-milk-coffee"
+    },
+    {
+      id: "vietnamese-black",
+      name: locale === "en" ? "Traditional Vietnamese Black Coffee" : "Cà phê đen truyền thống",
+      description: locale === "en" 
+        ? "Strong, pure traditional drip phin coffee for true coffee lovers." 
+        : "Cà phê phin đậm đà, thuần khiết mang hương vị truyền thống.",
+      image: "/Product/vietnamese-black.jpg",
+      category: "coffee",
+      price: 45,
+      slug: "vietnamese-black"
+    },
+    {
+      id: "milk-coffee",
+      name: locale === "en" ? "Milk Coffee" : "Cà phê sữa đá",
+      description: locale === "en" 
+        ? "Bold Vietnamese drip coffee perfectly balanced with sweet condensed milk." 
+        : "Cà phê phin đậm đà hòa quyện cùng sữa đặc và đá mát lạnh.",
+      image: "/Product/milk-coffee.jpg",
+      category: "coffee",
+      price: 50,
+      slug: "milk-coffee"
+    }
+  ];
+
+  const products = [...fetchedProducts, ...hardcodedNewProducts];
 
   const resolvedSlugProduct =
     slugProduct ||
