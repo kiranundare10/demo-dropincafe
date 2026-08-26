@@ -45,32 +45,26 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const locale = await getLocale();
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
-  // Define both IDs clearly
-  const existingAdsId = "AW-1020502103"; 
-  const newAdsId = "AW-18174541759";
-  
   return (
     <html lang={locale} suppressHydrationWarning className={caladea.variable}>
       <body>
         <Providers>{children}</Providers>
-        {gaId && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga-init" strategy="afterInteractive">
-              {`window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${gaId}');
-                gtag('config', 'AW-1020502103');
-                gtag('config', 'AW-18174541759');`}
-            </Script>
-          </>
-        )}
+
+        {/* Google Analytics + Google Ads Tags */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9RH2VXWDC4"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9RH2VXWDC4');
+            gtag('config', 'AW-1020502103');
+            gtag('config', 'AW-18174541759');`}
+        </Script>
+
         <TawkTo />
       </body>
     </html>
