@@ -231,7 +231,7 @@ export default function Footer() {
               <div className="aspect-4/3 w-full overflow-hidden rounded-lg border border-amber-100">
                 <iframe
                   title="Drop In Cafe & Bistro map"
-                  src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.9507357662046!2d105.84377817448092!3d21.0284510877907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab737607bd51%3A0xe8862fd981856845!2sDrop%20in%20Cafe%20%26%20Bistro!5e1!3m2!1svi!2sus!4v1790732090060!5m2!1svi!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3214.9508433585847!2d105.8463531!3d21.0284461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab737607bd51%3A0xe8862fd981856845!2sDrop%20in%20Cafe%20%26%20Bistro!5e1!3m2!1svi!2sin!4v1790732978233!5m2!1svi!2sin"
                   width="100%"
                   height="100%"
                   allowFullScreen
