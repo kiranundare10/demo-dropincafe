@@ -231,7 +231,7 @@ export default function Footer() {
               <div className="aspect-4/3 w-full overflow-hidden rounded-lg border border-amber-100">
                 <iframe
                   title="Drop In Cafe & Bistro map"
-                  src="https://www.google.com/maps?q=38+Quan+Su,+Hoan+Kiem,+Ha+Noi&hl=vi&output=embed"
+                  src="https://www.google.com/maps?q=21.0284461,105.8463531&z=17&hl=vi&output=embed"
                   width="100%"
                   height="100%"
                   allowFullScreen
