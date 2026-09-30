@@ -79,59 +79,7 @@ export default function Footer() {
             {/* COLUMN 1: Contact Details */}
             <div className="space-y-8">
               
-              {/* === BRANCH 1 === */}
-              <div className="space-y-5">
-                <div className="flex items-center gap-3">
-                  <img
-                    src="/Logo/Logo0.png"
-                    alt="Drop In Cafe"
-                    className="h-12 w-12 rounded-full border border-amber-200 object-cover object-[50%_30%] shadow-sm"
-                  />
-                  <div>
-                    <p className="text-base font-semibold text-slate-950">
-                      {t("brandName")}
-                    </p>
-                    <p className="text-sm text-slate-600">{t("brandTagline")}</p>
-                  </div>
-                </div>
-                <div className="space-y-2 text-sm text-slate-700">
-                  <p className="flex items-start gap-2">
-                    <MapPin className="mt-0.5 h-5 w-5 text-amber-500 shrink-0" />
-                    <span>{t("address")}</span>
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-green-500 shrink-0" />
-                    <a
-                      href="tel:+84961689163"
-                      className="transition hover:text-amber-600"
-                    >
-                      096 168 91 63
-                    </a>
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Mail className="h-5 w-5 text-red-600 shrink-0" />
-                    <a
-                      href="mailto:dropincafehn@gmail.com"
-                      className="transition hover:text-amber-600"
-                    >
-                      dropincafehn@gmail.com
-                    </a>
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <ExternalLink className="mt-0.5 h-5 w-5 text-slate-500 shrink-0" />
-                    <a
-                      href="https://maps.app.goo.gl/m1dF4toG6xPYLGdQ9"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="transition hover:text-amber-600 break-all"
-                    >
-                      maps.app.goo.gl/m1dF4toG6xPYLGdQ9
-                    </a>
-                  </p>
-                </div>
-              </div>
-
-              {/* === BRANCH 2 === */}
+              {/* === DROP IN CAFE & BISTRO === */}
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border border-amber-200 bg-amber-50 shadow-sm">
@@ -282,8 +230,8 @@ export default function Footer() {
             <div className="rounded-xl border border-amber-100 bg-white/80 p-3 shadow-sm">
               <div className="aspect-4/3 w-full overflow-hidden rounded-lg border border-amber-100">
                 <iframe
-                  title="Drop In Cafe map"
-                  src="https://www.google.com/maps?q=163+Phung+Hung,+Cua+Dong,+Hoan+Kiem,+Ha+Noi&hl=vi&output=embed"
+                  title="Drop In Cafe & Bistro map"
+                  src="https://www.google.com/maps?q=38+Quan+Su,+Hoan+Kiem,+Ha+Noi&hl=vi&output=embed"
                   width="100%"
                   height="100%"
                   allowFullScreen
@@ -293,7 +241,7 @@ export default function Footer() {
                 />
               </div>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=163+Phung+Hung,+Cua+Dong,+Hoan+Kiem,+Ha+Noi"
+                href="https://maps.app.goo.gl/afDSNDaqyfTDD9R39"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex items-center gap-2 text-sm text-sky-700 transition hover:text-amber-600"
